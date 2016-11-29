@@ -39,6 +39,14 @@ layer {
     crop_size: 227
     mean_file: "/home/ubuntu/dogvscat/dogvscat_mean.binaryproto"
   }
+# mean pixel / channel-wise mean instead of mean image
+#  transform_param {
+#    crop_size: 227
+#    mean_value: 104
+#    mean_value: 117
+#    mean_value: 123
+#    mirror: false
+#  }
   data_param {
     source: "/home/ubuntu/dogvscat/val_lmdb"
     batch_size: 50
